@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and set text color for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Style the header, including the navigation menu */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+section{
+    padding: 2rem 20%;
+}
+
+.slideshow-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the slideshow behind the content */
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Place the content above the slideshow */
+    text-align: center;
+    padding: 100px 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Background color with opacity for text */
+}
+
+.content h2 {
+    font-size: 36px;
+}
+
+.content p {
+    font-size: 18px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000; /* Fallback background color in case images don't load */
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    flex-flow: column;
+    padding: 2rem 10rem;
+    z-index: 0;
+}
+
+.destinations {
+    background-image: url("background\ -\ Copy.jpg"); /* Replace with your background image */
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.heading {
+    font-size: 36px;
+}
+
+.split-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure the section fills the entire viewport height */
+}
+
+.left-panel,
+.right-panel {
+    width:100%;
+    padding: 50px;
+    justify-content: center;
+}
+
+ .left-panel {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+} 
+
+.right-panel {
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.user-review {
+    background-color: #d72a2a;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.user-review h2 {
+    font-size: 20px;
+    margin-bottom: 10px; /* Add space between the title and form elements */
+}
+
+.user-review label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.user-review select,
+.user-review input[type="number"],
+.user-review textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9; /* Add a subtle background color */
+}
+
+.user-review button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Add a subtle pattern background */
+.user-review {
+    background-image: linear-gradient(45deg, #f0f0f0 25%, transparent 25%, transparent 75%, #f0f0f0 75%, #f0f0f0);
+    background-size: 10px 10px;
+}
+
+/* Style the select elements */
+.user-review select {
+    appearance: none;
+    padding-right: 30px; /* Add space for dropdown indicator */
+    background-image: url('down-arrow.png'); /* Replace with an arrow image */
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    cursor: pointer;
+}
+
+/* Additional Styling for New Fields */
+.user-review select#safety,
+.user-review select#environment,
+.user-review textarea#safety-comments,
+.user-review textarea#environment-comments {
+    appearance: none;
+    padding-right: 90px; /* Add space for dropdown indicator */
+    background-image: url('down-arrow.png'); /* Replace with an arrow image */
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    cursor: pointer;
+}
+
+/* Additional Styling for New Fields */
+.user-review select#safety,
+.user-review select#environment,
+.user-review textarea#safety-comments,
+.user-review textarea#environment-comments {
+    appearance: none;
+    padding-right: 150px; /* Add space for dropdown indicator */
+    background-image: url('down-arrow.png'); /* Replace with an arrow image */
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.user-review button:hover {
+    background-color: #0056b3;
+}
+
+.review-list {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.review-list h2 {
+    font-size: 20px;
+}
+
+.review-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.review-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+/* Styling for Safety Tips Section */
+.safety-tips {
+    background-image: url("mountabu.jpg");
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 36px;
+}
+
+.tips-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between tips */
+}
+
+.tip {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px; /* Adjust the width as needed */
+    text-align: left;
+}
+
+.tip h2 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.tip p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Add a subtle box shadow for each tip */
+.tip {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Styling for Forum Section */
+.forum {
+    background-image: url("forum.jpg");
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+}
+
+.forum .heading {
+    font-size: 36px;
+    color: #f9f6f6;
+}
+
+.forum-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between forum posts */
+}
+
+.forum-post {
+    background-color: #080808;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%; /* Adjust for responsiveness */
+    max-width: 600px; /* Maximum width for larger screens */
+    text-align: left;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(239, 236, 236, 0.1);
+}
+
+.forum-post h1 {
+    width: 60px;
+    height: 60px;
+    color: #f4f4f4;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.forum-post h2 {
+    font-size: 20px;
+    margin: 0;
+    color: #f4f4f4;
+}
+
+.forum-post p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #fefdfd;
+}
+
+.add-comment textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    color: #131212;
+    border: 1px solid #f9f7f7;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.add-comment button {
+    background-color: #6d6f71;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .forum-post {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+/* Style the content section */
+#content {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the footer */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Apply styles to links */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
